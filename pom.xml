@@ -19,10 +19,6 @@
         <!--<hibernate-search.version>5.8.0.Beta2</hibernate-search.version>-->
     </properties>
 
-    <build>
-
-    </build>
-
     <dependencies>
 
         <!-- HIBERNATE -->
@@ -68,5 +64,28 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.hibernate.orm.tooling</groupId>
+                <artifactId>hibernate-enhance-maven-plugin</artifactId>
+                <version>${hibernate.version}</version>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <enableDirtyTracking>true</enableDirtyTracking>
+                        </configuration>
+                        <goals>
+                            <!-- Phase : compile -->
+                            <goal>enhance</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>

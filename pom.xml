@@ -16,33 +16,17 @@
         <hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
 
         <hibernate-search.version>5.7.0.Final</hibernate-search.version>
-        <!--<hibernate-search.version>5.8.0.Beta2</hibernate-search.version>-->
     </properties>
 
     <dependencies>
 
         <!-- HIBERNATE -->
+        <!-- Integre aussi : hibernate-entitymanager + hibernate-java8 -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
-
-        <!--<dependency>-->
-        <!--<groupId>org.hibernate</groupId>-->
-        <!--<artifactId>hibernate-java8</artifactId>-->
-        <!--&lt;!&ndash; TOUT INTEGRE DANS HIBERNATE-CORE &ndash;&gt;-->
-        <!--<version>${hibernate.version}</version>-->
-        <!--<optional>true</optional>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-        <!--<groupId>org.hibernate</groupId>-->
-        <!--<artifactId>hibernate-entitymanager</artifactId>-->
-        <!--&lt;!&ndash; TOUT INTEGRE DANS HIBERNATE-CORE &ndash;&gt;-->
-        <!--<version>${hibernate.version}</version>-->
-        <!--<optional>true</optional>-->
-        <!--</dependency>-->
 
         <!-- Hibernate JPA 2 Metamodel Generator, fonctionnement avec compiler + APT -->
         <!-- Doc : https://docs.jboss.org/hibernate/jpamodelgen/1.0/reference/en-US/html_single/ -->

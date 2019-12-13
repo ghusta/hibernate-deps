@@ -21,6 +21,12 @@
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
+        <!-- Doit être rajouté jusqu'à Hibernate 5.1  -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-java8</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
 
         <!-- JPA 2.1 -->
         <dependency>

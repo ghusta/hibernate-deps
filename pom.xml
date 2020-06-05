@@ -11,11 +11,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <hibernate.version>5.3.17.Final</hibernate.version>
+        <hibernate.version>5.4.17.Final</hibernate.version>
 
-        <hibernate-validator.version>6.0.18.Final</hibernate-validator.version>
+        <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
 
-        <hibernate-search.version>5.10.4.Final</hibernate-search.version>
+        <hibernate-search.version>5.11.5.Final</hibernate-search.version>
     </properties>
 
     <dependencies>

@@ -21,9 +21,8 @@
     <dependencies>
 
         <!-- HIBERNATE -->
-        <!-- Integre aussi : hibernate-entitymanager + hibernate-java8 -->
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
@@ -32,7 +31,7 @@
         <!-- Doc : https://docs.jboss.org/hibernate/jpamodelgen/1.0/reference/en-US/html_single/ -->
         <!-- Generation dans : target/generated-sources/annotations -->
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-jpamodelgen</artifactId>
             <version>${hibernate.version}</version>
             <optional>true</optional>

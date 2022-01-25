@@ -41,7 +41,7 @@ jobs:
           java-version: 8
 
       - name: OWASP Dependency Check
-        run: mvn org.owasp:dependency-check-maven:6.2.1:check -DfailBuildOnCVSS=7.0 -ntp
+        run: mvn org.owasp:dependency-check-maven:check -DfailBuildOnCVSS=7.0 -ntp
 
       - uses: actions/upload-artifact@v2
         with:
